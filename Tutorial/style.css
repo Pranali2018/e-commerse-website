@@ -292,7 +292,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
 
 }
 
@@ -631,22 +631,108 @@ footer a:hover {
 
 /* shop page */
 
-#page-header{
+#page-header {
     background-image: url("images/banner/b1.jpg");
     width: 100%;
-    height:40vh;
+    height: 40vh;
     background-size: cover;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
 }
 
-#page-header h2{
-    
+#page-header h2,
+#page-header p {
+    color: rgba(243, 233, 233, 0.985);
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 15px;
+    font-weight: 600;
 }
 
 
+/* single product */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.small-img-col {
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 20px;
+}
 
 
+#prodetails .single-pro-details h4 {
+    padding: 35px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 25px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+}
+
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #088178;
+    color: white;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+    font-size: 14px;
+    color: rgb(63, 62, 62);
+
+}
 
 
 
@@ -859,8 +945,33 @@ footer a:hover {
         width: 100%
     }
 
-   footer .install .row img {
-   margin-top: 12px;
-}
+    footer .install .row img {
+        margin-top: 12px;
+    }
+
+    /* 
+sinngle product */
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+
+    #prodetails {
+        gap: 0px;
+
+    }
+
+
 
 }
